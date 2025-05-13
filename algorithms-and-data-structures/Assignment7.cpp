@@ -58,6 +58,15 @@ void append(element*& head, element*& tail, int value) {
     tail = newNode;
 }
 
+// printing the linked list
+void printList(element* head) {
+    while (head) {
+        cout << head->key << " ";
+        head = head->next;
+    }
+    cout << "\n";
+}
+
 // checking if list is sorted
 bool isSorted(element* head) {
     while (head && head->next) {
@@ -130,11 +139,8 @@ int main() {
             case 3:
                 // printing the current sequence
                 cout << "Sequence: ";
-                while (head) {
-                    cout << head->key << " ";
-                    head = head->next;
-                }
-                cout << "\n\n";
+                printList(head);
+                cout << "\n";
                 break;
             case 4:
                 // checking if array is sorted (ascending sort)
