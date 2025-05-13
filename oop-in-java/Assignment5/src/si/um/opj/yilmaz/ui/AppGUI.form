@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="si.um.opj.yilmaz.ui.AppGUI">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="2" left="2" bottom="2" right="2"/>
+    <constraints>
+      <xy x="20" y="20" width="725" height="543"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="6370a" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="3ee60" binding="Event" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Event"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fbc09" class="javax.swing.JLabel" binding="EventTitleLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Title"/>
+                </properties>
+              </component>
+              <component id="1cc7f" class="javax.swing.JTextField" binding="EventTitleTF">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="5a023" class="javax.swing.JLabel" binding="EventSDLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Scheduled Date"/>
+                </properties>
+              </component>
+              <component id="567ac" class="javax.swing.JTextField" binding="EventSDTF">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="6027b" class="javax.swing.JList" binding="eventList">
+                <constraints>
+                  <grid row="0" column="2" row-span="8" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="e0095" class="javax.swing.JButton" binding="createButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Create"/>
+                </properties>
+              </component>
+              <component id="e8b20" class="javax.swing.JButton" binding="deleteButton">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Delete"/>
+                </properties>
+              </component>
+              <component id="f79fc" class="javax.swing.JButton" binding="editButton">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Edit"/>
+                </properties>
+              </component>
+              <component id="e6d91" class="javax.swing.JLabel" binding="EventTypeLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Type"/>
+                </properties>
+              </component>
+              <component id="cdc78" class="javax.swing.JComboBox" binding="EventTypeCB">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Match"/>
+                    <item value="Training"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="58603" class="javax.swing.JLabel" binding="TrainerNameLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Trainer Name"/>
+                </properties>
+              </component>
+              <component id="487d0" class="javax.swing.JTextField" binding="TrainerNameTF">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="f5f4b" binding="Athlete" layout-manager="GridLayoutManager" row-count="9" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Athlete"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="88670" class="javax.swing.JLabel" binding="AthNameLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Name"/>
+                </properties>
+              </component>
+              <component id="a0645" class="javax.swing.JTextField" binding="AthNameTF">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="d6bd9" class="javax.swing.JLabel" binding="AthSurnameLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Surname"/>
+                </properties>
+              </component>
+              <component id="339d4" class="javax.swing.JTextField" binding="AthSurnameTF">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="38b08" class="javax.swing.JLabel" binding="AthNumLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Number"/>
+                </properties>
+              </component>
+              <component id="5fd47" class="javax.swing.JTextField" binding="AthNumTF">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="20f66" class="javax.swing.JTextField" binding="AthBDTF">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="ea8b8" class="javax.swing.JComboBox" binding="AthSportDisCB">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="JUDO"/>
+                    <item value="VOLLEYBALL"/>
+                    <item value="ATHLETICS"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="ecac4" class="javax.swing.JLabel" binding="AthBirthLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Birthdate"/>
+                </properties>
+              </component>
+              <component id="72295" class="javax.swing.JLabel" binding="AthSportDisLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Sport Discipline"/>
+                </properties>
+              </component>
+              <component id="588ec" class="javax.swing.JList" binding="athleteList">
+                <constraints>
+                  <grid row="0" column="2" row-span="9" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="24298" class="javax.swing.JButton" binding="deleteButton1">
+                <constraints>
+                  <grid row="7" column="0" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Delete"/>
+                </properties>
+              </component>
+              <component id="6b012" class="javax.swing.JButton" binding="createButton1">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Create"/>
+                </properties>
+              </component>
+              <component id="907df" class="javax.swing.JButton" binding="editButton1" default-binding="true">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Edit"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="94ed2" binding="Venue" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Venue"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e435f" class="javax.swing.JLabel" binding="VenueNameLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Name"/>
+                </properties>
+              </component>
+              <component id="6d5ba" class="javax.swing.JLabel" binding="VenuePhoneLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Phone Number"/>
+                </properties>
+              </component>
+              <component id="4f121" class="javax.swing.JTextField" binding="VenueNameTF">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="70867" class="javax.swing.JTextField" binding="VenuePhoneTF">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="80ece" class="javax.swing.JButton" binding="createButton2">
+                <constraints>
+                  <grid row="3" column="0" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Create"/>
+                </properties>
+              </component>
+              <component id="454d5" class="javax.swing.JList" binding="venueList">
+                <constraints>
+                  <grid row="0" column="2" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="aae00" class="javax.swing.JButton" binding="deleteButton2" default-binding="true">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Delete"/>
+                </properties>
+              </component>
+              <component id="36862" class="javax.swing.JButton" binding="editButton2">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Edit"/>
+                </properties>
+              </component>
+              <component id="a22f6" class="javax.swing.JComboBox" binding="VenueTypeCB">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Hall"/>
+                    <item value="Stadium"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="35cd7" class="javax.swing.JLabel" binding="VenueTypeLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Type"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="9c5b7" binding="Management" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Management"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <tabbedpane id="a2dfe" binding="ManagementTabs">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="10758" binding="AthleteToEvent" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Athlete-Event"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="bbda1" class="javax.swing.JLabel" binding="AthleteListLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Athletes"/>
+                        </properties>
+                      </component>
+                      <component id="fb89f" class="javax.swing.JLabel" binding="EventListLabel">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Events"/>
+                        </properties>
+                      </component>
+                      <component id="6e48" class="javax.swing.JList" binding="AthleteList">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="b028d" class="javax.swing.JList" binding="EventList">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="d779b" class="javax.swing.JButton" binding="addAthleteToEventButton" default-binding="true">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Add Athlete to Event"/>
+                        </properties>
+                      </component>
+                      <component id="fd25d" class="javax.swing.JButton" binding="removeAthleteFromEventButton" default-binding="true">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Remove Athlete from Event"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="5de4e" binding="MatchToVenue" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Match-Venue"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="18977" class="javax.swing.JList" binding="MatchList">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <model/>
+                        </properties>
+                      </component>
+                      <component id="4e563" class="javax.swing.JList" binding="VenueList">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="7b4bc" class="javax.swing.JLabel" binding="MatchListLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Matches"/>
+                        </properties>
+                      </component>
+                      <component id="e6081" class="javax.swing.JLabel" binding="VenueListLabel">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Venues"/>
+                        </properties>
+                      </component>
+                      <component id="d739e" class="javax.swing.JButton" binding="addMatchToVenueButton" default-binding="true">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Add Match to Venue"/>
+                        </properties>
+                      </component>
+                      <component id="58d7d" class="javax.swing.JButton" binding="removeMatchFromVenueButton" default-binding="true">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Remove Match from Venue"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </tabbedpane>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
